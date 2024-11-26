@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
+import { toast } from "react-toastify";
 
 function ForgetPass() {
   let location = useLocation();
@@ -14,10 +15,11 @@ function ForgetPass() {
     let email = e.target.email.value;
     resetPass(email)
       .then((res) => {
-        console.log("Password reset email sent");
+        toast.success("Password reset email sent");
+
         window.location.href = "https://gmail.com";
       })
-      .catch((err) => err.message);
+      .catch((err) => toast.error(err.message));
   }
   return (
     <div>

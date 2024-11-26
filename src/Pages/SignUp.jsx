@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function SignUp() {
   let { setUser, createAccount, editProfile } = useContext(AuthContext);
@@ -25,10 +26,10 @@ function SignUp() {
       .then((res) => {
         setUser(res.user);
         editProfile({ displayName: name, photoURL: photo });
-        console.log("New user craeted with email " + res.user.email);
+        toast.success("New user craeted with email " + res.user.email);
       })
       .catch((err) => {
-        console.log(err.message);
+        toast.error(err.message);
       });
   }
   return (

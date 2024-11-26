@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function LogIn() {
   let { setUser, signIn } = useContext(AuthContext);
@@ -16,9 +18,9 @@ function LogIn() {
     signIn(email, pass)
       .then((res) => {
         setUser(res.user);
-        console.log("New user logged in with email " + res.user.email);
+        toast.success("New user logged in with email " + res.user.email);
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => toast.error(err.message));
   }
   return (
     <div>
@@ -53,23 +55,26 @@ function LogIn() {
                   className="input input-bordered text-white"
                   required
                 />
-                <label className="label">
-                  <button
-                    onClick={() =>
-                      navigate("/forgetpass", { state: { userEmail } })
-                    }
-                    className="label-text-alt link link-hover text-white"
-                  >
-                    Forgot password?
-                  </button>
-                </label>
+                {/* <label className="label"> */}
+                <button
+                  onClick={() =>
+                    navigate("/forgetpass", { state: { userEmail } })
+                  }
+                  className="label-text-alt link link-hover text-white text-left mt-5"
+                >
+                  Forgot password?
+                </button>
+                {/* </label> */}
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-success-primary-400 border-none text-white hover:bg-success-primary-500">
+                <button
+                  type="submit"
+                  className="btn bg-success-primary-400 border-none text-white hover:bg-success-primary-500"
+                >
                   Login
                 </button>
                 <p className="text-white py-4 text-xs">
-                  New to the website?{" "}
+                  New to the website?
                   <Link to="/signup" className="text-success-primary-500">
                     Create Account
                   </Link>
