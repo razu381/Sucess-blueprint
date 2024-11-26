@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, Links, NavLink } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 
 function Header() {
-  let { user } = useContext(AuthContext);
+  let { user, LogOut } = useContext(AuthContext);
+  let [isUserImageHovered, setUserImageHovered] = useState(false);
+
   console.log(user);
   let li = (
     <>
@@ -56,7 +58,36 @@ function Header() {
         <ul className="menu menu-horizontal px-1">{li}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Log in</a>
+        {user ? (
+          <>
+            <h4
+              className={`${
+                isUserImageHovered ? "opacity-100" : "opacity-0"
+              } mr-2`}
+            >
+              {user?.displayName}
+            </h4>
+            <img
+              onMouseEnter={() => setUserImageHovered(true)}
+              onMouseLeave={() => setUserImageHovered(false)}
+              src={user?.photoURL}
+              className="w-10 rounded-full mr-2"
+            />
+            <Link
+              onClick={LogOut}
+              className="btn bg-success-primary-500 text-white py-2 px-4 hover:bg-success-primary-800"
+            >
+              Logout
+            </Link>
+          </>
+        ) : (
+          <Link
+            to="/login"
+            className="btn bg-success-primary-500 text-white hover:bg-success-primary-800"
+          >
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );

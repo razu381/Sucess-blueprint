@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
+import { Link } from "react-router-dom";
 
 function SignUp() {
-  let { setUser, createAccount } = useContext(AuthContext);
+  let { setUser, createAccount, editProfile } = useContext(AuthContext);
 
   function handleSignUp(e) {
     e.preventDefault();
@@ -23,6 +24,7 @@ function SignUp() {
     createAccount(email, pass)
       .then((res) => {
         setUser(res.user);
+        editProfile({ displayName: name, photoURL: photo });
         console.log("New user craeted with email " + res.user.email);
       })
       .catch((err) => {
@@ -91,6 +93,12 @@ function SignUp() {
                 <button className="btn bg-success-primary-400 border-none text-white hover:bg-success-primary-500">
                   Sign up
                 </button>
+                <p className="text-white py-4 text-xs text-center">
+                  New to the website?
+                  <Link to="/login" className="text-success-primary-500">
+                    Login
+                  </Link>
+                </p>
               </div>
             </form>
           </div>

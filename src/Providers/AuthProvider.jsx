@@ -1,26 +1,25 @@
 import { createContext, useEffect, useState } from "react";
 import { auth } from "./firebase_config";
 import {
+  createUserWithEmailAndPassword,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signOut,
+  updateProfile,
 } from "firebase/auth";
 
 export let AuthContext = createContext();
 
 function AuthProvider({ children }) {
-  let [user, setUser] = useState({
-    displayName: "Razu",
-    photoUrl: "https://avatars.githubusercontent.com/u/60482204?v=4&size=64",
-    email: "sirazu52@gmail.com",
-  });
+  let [user, setUser] = useState();
   //let [loading, setLoading] = useState(true);
 
   function createAccount(email, pass) {
     //setLoading(true);
     return createUserWithEmailAndPassword(auth, email, pass);
   }
-  function SignIn(email, pass) {
+  function signIn(email, pass) {
     //setLoading(true);
     return signInWithEmailAndPassword(auth, email, pass);
   }
@@ -28,10 +27,17 @@ function AuthProvider({ children }) {
     //setLoading(true);
     return signOut(auth);
   }
+  function editProfile(userData) {
+    return updateProfile(auth.currentUser, userData);
+  }
 
+  function resetPass(email) {
+    return sendPasswordResetEmail(auth, email);
+  }
   useEffect(() => {
     let unsubscribe = onAuthStateChanged(auth, (CurrUser) => {
       setUser(CurrUser);
+      console.log(CurrUser?.email);
       //setLoading(false);
     });
 
@@ -42,10 +48,13 @@ function AuthProvider({ children }) {
 
   let authInfo = {
     user,
+    setUser,
     //loading,
     createAccount,
-    SignIn,
+    signIn,
     LogOut,
+    editProfile,
+    resetPass,
   };
 
   return (
