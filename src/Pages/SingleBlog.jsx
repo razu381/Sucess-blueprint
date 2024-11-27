@@ -74,7 +74,7 @@ function SingleBlog() {
 
           {/* comments section */}
           <div className="grid grid-cols-12 gap-2">
-            <div className="col-span-4">
+            <div className="col-span-12 lg:col-span-4">
               <form action="" onSubmit={handleComment}>
                 <textarea
                   name="comment"
@@ -88,8 +88,8 @@ function SingleBlog() {
                 />
               </form>
             </div>
-            <div className="col-span-8">
-              <h2 className="fontn-bold text-xl ">Comments </h2>
+            <div className="col-span-12 lg:col-span-8">
+              <h2 className="font-bold text-xl ">Comments </h2>
               <ShowComments comments={comments}></ShowComments>
             </div>
           </div>

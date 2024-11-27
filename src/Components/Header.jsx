@@ -49,7 +49,7 @@ function Header() {
         </div>
         <Link
           to="/"
-          className="font-heading font-semibold text-3xl text-success-primary-500"
+          className="font-heading font-semibold lg:text-3xl text-success-primary-500"
         >
           Success Blueprint
         </Link>
@@ -63,7 +63,7 @@ function Header() {
             <h4
               className={`${
                 isUserImageHovered ? "opacity-100" : "opacity-0"
-              } mr-2`}
+              } mr-1 ml-1 lg:mr-2`}
             >
               {user?.displayName}
             </h4>

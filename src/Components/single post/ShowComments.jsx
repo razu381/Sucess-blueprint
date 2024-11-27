@@ -4,11 +4,11 @@ import { FaCircleUser } from "react-icons/fa6";
 
 function ShowComments({ comments }) {
   let { user } = useContext(AuthContext);
-  console.log(user);
+
   return (
     <div className="my-2">
       {comments.map((comment) => (
-        <div className=" bg-slate-50 pt-1 pb-3 px-2 mt-2 mr-[30%] rounded-md">
+        <div className=" bg-slate-50 pt-1 pb-3 px-2 mt-2 lg:mr-[30%] rounded-md">
           <div className="flex gap-2 items-center mt-5">
             {user.photoURL ? (
               <img src={user.photoURL} className="w-5 rounded-full" />

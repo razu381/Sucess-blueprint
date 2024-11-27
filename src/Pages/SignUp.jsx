@@ -37,7 +37,7 @@ function SignUp() {
   return (
     <div>
       <div className="hero svg-background">
-        <div className=" flex-col w-1/3 py-10 lg:flex-row-reverse">
+        <div className=" flex-col py-10 lg:flex-row-reverse">
           <div className="card bg-white bg-opacity-5 w-full shrink-0 shadow-2xl">
             <h2 className="text-center text-white text-2xl font-bold pt-5">
               Sucess Blueprint

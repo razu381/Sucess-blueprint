@@ -23,7 +23,7 @@ function MyProfiele() {
   }
   return (
     <section className="flex flex-col md:flex-row">
-      <div className="bg-success-primary-100 flex-1 mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div className="bg-success-primary-100 order-2 md:order-1 flex-1 mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-lg text-center">
           <h1 className="text-2xl font-bold sm:text-3xl">
             Update Your Profile
@@ -82,7 +82,7 @@ function MyProfiele() {
         </form>
       </div>
 
-      <div className="flex-1 border border-gray-700 bg-success-primary-900 px-4 py-16">
+      <div className="order-1 md:order-2 flex-1 border border-gray-700 bg-success-primary-900 px-4 py-16">
         <article>
           <div className="flex items-center gap-4">
             {profile.photoURL ? (
