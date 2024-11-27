@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function SignUp() {
-  let { setUser, createAccount, editProfile } = useContext(AuthContext);
+  let { setUser, createAccount, editProfile, loginWithGoogle } =
+    useContext(AuthContext);
 
   function handleSignUp(e) {
     e.preventDefault();
@@ -32,6 +33,7 @@ function SignUp() {
         toast.error(err.message);
       });
   }
+
   return (
     <div>
       <div className="hero svg-background">
@@ -50,7 +52,6 @@ function SignUp() {
                   type="text"
                   placeholder="Name"
                   className="input input-bordered"
-                  required
                 />
               </div>
 
@@ -75,7 +76,6 @@ function SignUp() {
                   type="text"
                   placeholder="Profile picture url"
                   className="input input-bordered"
-                  required
                 />
               </div>
               <div className="form-control">
@@ -94,6 +94,15 @@ function SignUp() {
                 <button className="btn bg-success-primary-400 border-none text-white hover:bg-success-primary-500">
                   Sign up
                 </button>
+
+                {/* login with google */}
+                <button
+                  onClick={loginWithGoogle}
+                  className="btn bg-transparent border border-[#F4B400]  text-[#F4B400] hover:bg-success-dark  mt-5"
+                >
+                  Signup with Google
+                </button>
+                {/* New to our site text */}
                 <p className="text-white py-4 text-xs text-center">
                   New to the website?
                   <Link to="/login" className="text-success-primary-500">

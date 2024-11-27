@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function LogIn() {
-  let { setUser, signIn } = useContext(AuthContext);
+  let { setUser, signIn, loginWithGoogle } = useContext(AuthContext);
   let [userEmail, setUserEmail] = useState();
 
   let navigate = useNavigate();
@@ -55,7 +55,6 @@ function LogIn() {
                   className="input input-bordered text-white"
                   required
                 />
-                {/* <label className="label"> */}
                 <button
                   onClick={() =>
                     navigate("/forgetpass", { state: { userEmail } })
@@ -64,7 +63,6 @@ function LogIn() {
                 >
                   Forgot password?
                 </button>
-                {/* </label> */}
               </div>
               <div className="form-control mt-6">
                 <button
@@ -73,6 +71,15 @@ function LogIn() {
                 >
                   Login
                 </button>
+
+                {/* login with google */}
+                <button
+                  onClick={loginWithGoogle}
+                  className="btn bg-transparent border border-[#F4B400]  text-[#F4B400] hover:bg-success-dark  mt-5"
+                >
+                  Login with Google
+                </button>
+                {/* New to our site text */}
                 <p className="text-white py-4 text-xs">
                   New to the website?
                   <Link to="/signup" className="text-success-primary-500">

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/yS2cc4t/pexels-rdne-9064680.jpg",
+    "serviceName": "Career Counseling Sessions",
+    "category": "Online",
+    "briefDescription": "Our personalized career counseling sessions are designed to provide in-depth guidance tailored to your unique aspirations, skills, and interests. Whether you're a student choosing your first career path, a professional seeking growth opportunities, or someone considering a career change, our expert counselors will help you navigate the complexities of the professional world. From setting achievable goals to addressing challenges and building a step-by-step action plan, these sessions will equip you with the clarity and confidence to take control of your future. Gain valuable insights, explore career options, and create a roadmap for long-term success.",
+    "pricing": "$50 per session",
+    "durationWithDate": "05-12-24 5:00 PM - 6:00 PM",
+    "counselor": "Dr. Emily Carter",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/JdrSfxY/pexels-polina-zimmerman-3958379.jpg",
+    "serviceName": "Resume Review",
+    "category": "Online",
+    "briefDescription": "Enhance your resume with professional insights and proven strategies to make a strong impact in today’s competitive job market. Our resume review service offers detailed feedback on formatting, content, and structure, ensuring your resume effectively highlights your skills and accomplishments. Whether you’re applying for your first job or seeking new opportunities, we’ll help you craft a standout CV that aligns with industry standards and showcases your unique value to employers. With tailored recommendations, we’ll help you avoid common mistakes and present yourself as the ideal candidate for your dream role.",
+    "pricing": "$30 per review",
+    "durationWithDate": "07-12-24 3:00 PM - 4:00 PM",
+    "counselor": "Mr. John Mitchell",
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/PTxvnc2/pexels-cottonbro-4101143.jpg",
+    "serviceName": "Mock Interview Sessions",
+    "category": "Group",
+    "briefDescription": "Prepare for your next big interview with our interactive mock interview sessions. Led by industry experts, these sessions simulate real interview scenarios to help you gain confidence and improve your communication skills. Receive constructive feedback on your responses, body language, and overall presentation, ensuring you leave a lasting impression on potential employers. This group session is ideal for honing your skills, learning from others, and developing effective strategies for tackling challenging questions. Perfect for job seekers of all experience levels, these sessions will help you stand out and secure your desired role.",
+    "pricing": "$40 per session",
+    "durationWithDate": "10-12-24 6:00 PM - 7:30 PM",
+    "counselor": "Ms. Sarah Johnson",
+    "rating": 4.9
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/hcS406W/university-2104580-1280.jpg",
+    "serviceName": "Career Workshops",
+    "category": "Offline",
+    "briefDescription": "Dive into hands-on career workshops designed to provide practical knowledge and insights into various industries. These workshops offer a collaborative environment where participants can explore career opportunities, develop essential skills, and engage in activities to identify their strengths and passions. Led by experienced professionals, each workshop is packed with valuable resources, interactive exercises, and real-world scenarios to help you make informed career decisions. Whether you’re just starting out or considering a career change, these sessions provide the tools and confidence you need to take your next step.",
+    "pricing": "$75 per workshop",
+    "durationWithDate": "12-12-24 10:00 AM - 1:00 PM",
+    "counselor": "Dr. Alan Brooks",
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/YW1Byt4/knowledge-train-4507899-1280.jpg",
+    "serviceName": "Skill Assessment Tests",
+    "category": "Online",
+    "briefDescription": "Discover your strengths and areas for improvement with our comprehensive skill assessment tests. These evaluations are designed to align your capabilities with your career goals, offering detailed insights into your skills, competencies, and potential growth areas. By identifying key areas of focus, we help you make more informed decisions about your career path. Ideal for individuals looking to advance their careers, transition to a new field, or explore their options, these assessments provide personalized recommendations and actionable steps for success. Take the first step toward unlocking your potential.",
+    "pricing": "$20 per test",
+    "durationWithDate": "15-12-24 2:00 PM - 3:00 PM",
+    "counselor": "Ms. Rebecca Smith",
+    "rating": 4.5
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/m6B4kLC/pexels-divinetechygirl-1181712.jpg",
+    "serviceName": "Career Transition Coaching",
+    "category": "Online",
+    "briefDescription": "Navigating a career change can be challenging, but our career transition coaching services are here to support you every step of the way. Whether you're looking to switch industries, re-enter the workforce, or pursue a passion, our expert coaches will work with you to identify your goals and create a customized plan. Through personalized sessions, we’ll help you overcome obstacles, build confidence, and develop strategies to position yourself for success in your new role. Gain clarity, refine your skills, and turn your aspirations into reality with our tailored coaching services.",
+    "pricing": "$60 per session",
+    "durationWithDate": "18-12-24 4:00 PM - 5:30 PM",
+    "counselor": "Mr. David Lee",
+    "rating": 4.8
+  }
+]

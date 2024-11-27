@@ -28,3 +28,18 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 999 !important;
+}
+
+.hero-overlay {
+  background: #0f2027; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    rgba(44, 83, 100, 0.4),
+    rgba(32, 58, 67, 0.4),
+    rgba(15, 32, 39, 0.4)
+  );
+}

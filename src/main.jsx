@@ -9,6 +9,10 @@ import AuthProvider from "./Providers/AuthProvider.jsx";
 import LogIn from "./Pages/LogIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import ForgetPass from "./Pages/ForgetPass.jsx";
+import NotFound from "./Pages/NotFound.jsx";
+import SingleBlog from "./Pages/SingleBlog.jsx";
+import PrivateRoute from "./Routes/PrivateRoute.jsx";
+import MyProfiele from "./Pages/MyProfiele.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +35,24 @@ const router = createBrowserRouter([
         path: "/forgetpass",
         element: <ForgetPass />,
       },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <MyProfiele />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/services/:postId",
+        element: (
+          <PrivateRoute>
+            <SingleBlog></SingleBlog>
+          </PrivateRoute>
+        ),
+      },
     ],
+    errorElement: <NotFound></NotFound>,
   },
 ]);
 
