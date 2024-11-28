@@ -49,7 +49,7 @@ function Header() {
         </div>
         <Link
           to="/"
-          className="font-heading font-semibold lg:text-3xl text-success-primary-500"
+          className="font-heading font-extrabold lg:text-3xl text-success-primary-500 italic"
         >
           Success Blueprint
         </Link>

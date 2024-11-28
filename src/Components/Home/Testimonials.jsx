@@ -14,7 +14,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/2.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -63,7 +63,7 @@ function Testimonials() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Paul Starr
+                    Haruki Murakami
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/0.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -130,7 +130,7 @@ function Testimonials() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Ben Stark
+                    Dale Carnegie
                   </p>
                 </div>
               </div>
@@ -147,7 +147,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/3.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -196,7 +196,7 @@ function Testimonials() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Maxim Gork
+                    Maxim Gorki
                   </p>
                 </div>
               </div>
@@ -213,7 +213,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/1.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -262,7 +262,7 @@ function Testimonials() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Laurance steurat
+                    Robert Kiosaki
                   </p>
                 </div>
               </div>
@@ -279,7 +279,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/4.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -348,7 +348,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/5.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -397,7 +397,7 @@ function Testimonials() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Paul Starr
+                    James Clear
                   </p>
                 </div>
               </div>
@@ -414,7 +414,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/6.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -463,7 +463,7 @@ function Testimonials() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Ben Dover
+                    Napolion Hill
                   </p>
                 </div>
               </div>
@@ -480,7 +480,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/7.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -529,7 +529,7 @@ function Testimonials() {
                   </div>
 
                   <p className="mt-0.5 text-lg font-medium text-gray-900">
-                    Ethan Hunt
+                    Malcom Gladwell
                   </p>
                 </div>
               </div>
@@ -549,7 +549,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
+                  src="https://xsgames.co/randomusers/assets/avatars/male/8.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 

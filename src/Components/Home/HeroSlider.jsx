@@ -2,22 +2,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { A11y, Navigation, Pagination } from "swiper/modules";
+import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
 
 function HeroSlider() {
   return (
     <Swiper
-      modules={[Navigation, Pagination, A11y]}
+      modules={[Autoplay, Navigation, Pagination, A11y]}
+      spaceBetween={50}
       autoplay={{
         delay: 2000,
         disableOnInteraction: false,
       }}
-      spaceBetween={50}
       slidesPerView={1}
       pagination={{ clickable: true }}
       navigation={true}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
         <div

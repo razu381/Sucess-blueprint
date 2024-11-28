@@ -13,6 +13,7 @@ import NotFound from "./Pages/NotFound.jsx";
 import SingleBlog from "./Pages/SingleBlog.jsx";
 import PrivateRoute from "./Routes/PrivateRoute.jsx";
 import MyProfiele from "./Pages/MyProfiele.jsx";
+import BookCall from "./Pages/BookCall.jsx";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <MyProfiele />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/consultation",
+        element: (
+          <PrivateRoute>
+            <BookCall />
           </PrivateRoute>
         ),
       },

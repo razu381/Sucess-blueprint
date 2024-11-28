@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="footer footer-center bg-success-text text-primary-content p-10">
+    <footer className="footer footer-center bg-success-primary-900 text-primary-content p-10">
       <aside>
         <p className="font-bold">
           Success Blueprint Ltd.

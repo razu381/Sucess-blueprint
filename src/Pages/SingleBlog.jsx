@@ -32,7 +32,10 @@ function SingleBlog() {
     function handleComment(e) {
       e.preventDefault();
       let comment = e.target.comment.value;
-
+      if (comment.trim().length === 0) {
+        alert("Comment can't be empty");
+        return;
+      }
       setComments([...comments, comment]);
     }
 
