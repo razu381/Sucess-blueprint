@@ -19,6 +19,7 @@ function LogIn() {
       .then((res) => {
         setUser(res.user);
         toast.success("New user logged in with email " + res.user.email);
+        navigate("/profile");
       })
       .catch((err) => toast.error(err.message));
   }
