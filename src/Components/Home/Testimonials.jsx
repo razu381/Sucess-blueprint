@@ -14,7 +14,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/2.jpg"
+                  src="/users/user1.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -81,7 +81,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/0.jpg"
+                  src="/users/user2.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -147,7 +147,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/3.jpg"
+                  src="/users/user3.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -213,7 +213,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/1.jpg"
+                  src="/users/user4.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -279,7 +279,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/4.jpg"
+                  src="/users/user5.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -348,7 +348,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/5.jpg"
+                  src="/users/user6.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -414,7 +414,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/6.jpg"
+                  src="/users/user7.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -480,7 +480,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/7.jpg"
+                  src="/users/user8.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
@@ -549,7 +549,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="https://xsgames.co/randomusers/assets/avatars/male/8.jpg"
+                  src="/users/user9.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 

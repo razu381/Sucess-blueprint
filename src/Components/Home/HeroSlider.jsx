@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function HeroSlider() {
   return (
@@ -35,9 +36,11 @@ function HeroSlider() {
                 Explore personalized guidance, resources, and tools to navigate
                 your professional journey with confidence.
               </p>
-              <button className="btn bg-success-dark text-white border-none">
-                Get Started
-              </button>
+              <Link to="/consultation" clas>
+                <button className="btn bg-success-dark hover:bg-success-primary-500 text-white border-none">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -60,9 +63,11 @@ function HeroSlider() {
                 insights. Your aspirations deserve the right direction—start
                 building your dream future today.
               </p>
-              <button className="btn bg-success-dark text-white border-none">
-                Get Started
-              </button>
+              <Link to="/consultation" clas>
+                <button className="btn bg-success-dark hover:bg-success-primary-500 text-white border-none">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -85,9 +90,11 @@ function HeroSlider() {
                 make informed decisions. Your success starts with the right
                 guidance—let’s take the first step together.
               </p>
-              <button className="btn bg-success-dark text-white border-none">
-                Get Started
-              </button>
+              <Link to="/consultation" clas>
+                <button className="btn bg-success-dark hover:bg-success-primary-500 text-white border-none">
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         </div>
