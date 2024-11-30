@@ -5,8 +5,6 @@ import { useRouteError } from "react-router-dom";
 function NotFound() {
   const error = useRouteError();
 
-  console.log("error = ", error.status);
-
   if (error.status == 404) {
     return (
       <div className="hero bg-base-200 min-h-screen">

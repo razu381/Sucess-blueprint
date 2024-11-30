@@ -7,7 +7,6 @@ import { Helmet } from "react-helmet";
 function ForgetPass() {
   let location = useLocation();
   let ReceivedEmail = location.state?.userEmail;
-  console.log(ReceivedEmail);
 
   let { resetPass } = useContext(AuthContext);
 

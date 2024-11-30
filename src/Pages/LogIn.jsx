@@ -11,10 +11,7 @@ function LogIn() {
   let [userEmail, setUserEmail] = useState(); //to send email to forget pass
   let [showPass, setShowpass] = useState(false);
   let location = useLocation().state;
-  // if (location) {
-  //   location = location.replace("/", "");
-  // }
-  console.log(location);
+
   let navigate = useNavigate();
 
   function handleLogin(e) {
@@ -27,7 +24,6 @@ function LogIn() {
         setUser(res.user);
         toast.success("New user logged in with email " + res.user.email);
 
-        console.log("This is before navigate - ", location);
         if (location) {
           navigate(location);
         } else {

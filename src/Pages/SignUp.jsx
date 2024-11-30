@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
@@ -10,6 +10,8 @@ function SignUp() {
     useContext(AuthContext);
 
   let [showPass, setShowpass] = useState(false);
+
+  let navigate = useNavigate();
 
   function handleSignUp(e) {
     e.preventDefault();
@@ -32,6 +34,7 @@ function SignUp() {
         setUser(res.user);
         editProfile({ displayName: name, photoURL: photo });
         toast.success("New user craeted with email " + res.user.email);
+        navigate("/profile");
       })
       .catch((err) => {
         toast.error(err.message);

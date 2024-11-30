@@ -18,7 +18,6 @@ function MyProfiele() {
       .then((res) => {
         setProfile({ ...profile, displayName: name, photoURL: photo });
         toast.success("User profile updated successfully");
-        console.log("this is profile", profile);
       })
       .catch((err) => toast.error("err.message"));
   }
