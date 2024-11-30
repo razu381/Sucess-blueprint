@@ -213,7 +213,7 @@ function Testimonials() {
               <div className="flex items-center gap-4">
                 <img
                   alt=""
-                  src="/users/user4.jpg"
+                  src="/users/user11.jpg"
                   className="size-14 rounded-full object-cover"
                 />
 
