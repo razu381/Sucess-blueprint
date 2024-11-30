@@ -22,7 +22,7 @@ body {
 }
 
 .svg-background {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("/authBg.svg");
   background-repeat: no-repeat;
   background-size: cover;

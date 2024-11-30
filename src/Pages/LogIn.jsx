@@ -87,6 +87,7 @@ function LogIn() {
                   required
                 />
                 <button
+                  type="button"
                   onClick={() =>
                     navigate("/forgetpass", { state: { userEmail } })
                   }
@@ -105,6 +106,7 @@ function LogIn() {
 
                 {/* login with google */}
                 <button
+                  type="button"
                   onClick={loginWithGoogle}
                   className="btn bg-transparent border border-[#F4B400]  text-[#F4B400] hover:bg-success-dark  mt-5"
                 >

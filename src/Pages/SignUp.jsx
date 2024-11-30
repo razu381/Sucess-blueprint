@@ -21,7 +21,7 @@ function SignUp() {
     const regex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
 
     if (!regex.test(pass)) {
-      console.log(
+      toast.error(
         "Password length must be 6 and it should contain one uppercase, one lowercase letter"
       );
       return;
@@ -43,7 +43,7 @@ function SignUp() {
       <Helmet>
         <title>Sign up - Success Blueprint</title>
       </Helmet>
-      <div className="hero svg-background">
+      <div className="hero bg-blue-950 svg-background">
         <div className=" flex-col py-10 lg:flex-row-reverse">
           <div className="card bg-white bg-opacity-5 w-full shrink-0 shadow-2xl">
             <h2 className="text-center text-white text-2xl font-bold pt-5">
@@ -87,7 +87,7 @@ function SignUp() {
               </div>
               <div className="form-control relative">
                 <label className="label">
-                  <span className="label-text ">Password</span>
+                  <span className="label-text text-white">Password</span>
                 </label>
                 {showPass ? (
                   <FaEyeSlash
