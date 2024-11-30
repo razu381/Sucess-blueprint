@@ -4,10 +4,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Helmet } from "react-helmet";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 function LogIn() {
   let { setUser, signIn, loginWithGoogle } = useContext(AuthContext);
-  let [userEmail, setUserEmail] = useState();
+  let [userEmail, setUserEmail] = useState(); //to send email to forget pass
+  let [showPass, setShowpass] = useState(false);
   let location = useLocation().state;
   // if (location) {
   //   location = location.replace("/", "");
@@ -59,15 +61,29 @@ function LogIn() {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text text-white">Password</span>
                 </label>
+                {showPass ? (
+                  <FaEyeSlash
+                    onClick={() => setShowpass(!showPass)}
+                    color="grey"
+                    className="absolute top-12 mt-1 right-3"
+                  />
+                ) : (
+                  <FaEye
+                    onClick={() => setShowpass(!showPass)}
+                    color="grey"
+                    className="absolute top-12 mt-1 right-3"
+                  />
+                )}
+
                 <input
                   name="pass"
-                  type="password"
+                  type={showPass ? "text" : "password"}
                   placeholder="password"
-                  className="input input-bordered text-white"
+                  className="input input-bordered"
                   required
                 />
                 <button

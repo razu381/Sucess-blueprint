@@ -1,12 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
+import { FaEye, FaEyeSlash } from "react-icons/fa6";
 
 function SignUp() {
   let { setUser, createAccount, editProfile, loginWithGoogle } =
     useContext(AuthContext);
+
+  let [showPass, setShowpass] = useState(false);
 
   function handleSignUp(e) {
     e.preventDefault();
@@ -82,15 +85,28 @@ function SignUp() {
                   className="input input-bordered"
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
-                  <span className="label-text text-white">Password</span>
+                  <span className="label-text ">Password</span>
                 </label>
+                {showPass ? (
+                  <FaEyeSlash
+                    onClick={() => setShowpass(!showPass)}
+                    color="grey"
+                    className="absolute top-12 mt-1 right-3"
+                  />
+                ) : (
+                  <FaEye
+                    onClick={() => setShowpass(!showPass)}
+                    color="grey"
+                    className="absolute top-12 mt-1 right-3"
+                  />
+                )}
                 <input
                   name="pass"
-                  type="password"
+                  type={showPass ? "text" : "password"}
                   placeholder="password"
-                  className="input input-bordered text-white"
+                  className="input input-bordered"
                   required
                 />
               </div>
