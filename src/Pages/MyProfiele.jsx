@@ -3,6 +3,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { Navigate } from "react-router-dom";
 import { FaCircleUser } from "react-icons/fa6";
+import { Helmet } from "react-helmet";
 
 function MyProfiele() {
   let { user, setUser, editProfile, loading } = useContext(AuthContext);
@@ -23,6 +24,9 @@ function MyProfiele() {
   }
   return (
     <section className="flex flex-col md:flex-row">
+      <Helmet>
+        <title>My Profile - Success Blueprint</title>
+      </Helmet>
       <div className="bg-success-primary-100 order-2 md:order-1 flex-1 mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-lg text-center">
           <h1 className="text-2xl font-bold sm:text-3xl">

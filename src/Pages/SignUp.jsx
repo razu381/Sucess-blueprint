@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 function SignUp() {
   let { setUser, createAccount, editProfile, loginWithGoogle } =
@@ -36,6 +37,9 @@ function SignUp() {
 
   return (
     <div>
+      <Helmet>
+        <title>Sign up - Success Blueprint</title>
+      </Helmet>
       <div className="hero svg-background">
         <div className=" flex-col py-10 lg:flex-row-reverse">
           <div className="card bg-white bg-opacity-5 w-full shrink-0 shadow-2xl">

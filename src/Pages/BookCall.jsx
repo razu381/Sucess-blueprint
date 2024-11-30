@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 import { Bounce, toast } from "react-toastify";
 
@@ -43,6 +44,9 @@ function BookCall() {
   }
   return (
     <section className="relative bg-[url(https://i.ibb.co.com/yPDmtQT/coachBg.jpg)] bg-cover bg-top bg-no-repeat">
+      <Helmet>
+        <title>Book a call - Success Blueprint</title>
+      </Helmet>
       <div className="absolute inset-0 bg-black sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25"></div>
 
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">

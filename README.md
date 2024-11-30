@@ -1,8 +1,14 @@
-# React + Vite
+#Website:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+success Blueprint. A career counseling website
 
-Currently, two official plugins are available:
+#Live link:
+https://sucess-blueprint.web.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Features:
+
+1. A complete responsive carrear counselling website
+2. Counseling types and theri single page
+3. Authentication
+4. Private Route Implementation
+5. Forms to contact and update profile later if they want

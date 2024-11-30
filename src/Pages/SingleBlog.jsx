@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../Components/single post/ShowComments";
 import ShowComments from "../Components/single post/ShowComments";
+import { Helmet } from "react-helmet";
 
 function SingleBlog() {
   let [services, setServices] = useState([]);
@@ -41,6 +42,9 @@ function SingleBlog() {
 
     return (
       <div>
+        <Helmet>
+          <title> Post - Success Blueprint</title>
+        </Helmet>
         <div className="mt-10 card bg-base-100 shadow-xl relative px-[10%] mx-auto pb-20">
           <figure>
             <img src={image} className="w-full rounded-2xl" />

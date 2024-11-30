@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 function ForgetPass() {
   let location = useLocation();
@@ -23,6 +24,9 @@ function ForgetPass() {
   }
   return (
     <div>
+      <Helmet>
+        <title>Reset password - Success Blueprint</title>
+      </Helmet>
       <div className="hero svg-background min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-white bg-opacity-5 w-full max-w-md shrink-0 shadow-2xl">

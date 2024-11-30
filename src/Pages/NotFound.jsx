@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useRouteError } from "react-router-dom";
 
 function NotFound() {
@@ -24,6 +25,9 @@ function NotFound() {
   } else {
     return (
       <div className="hero bg-base-200 min-h-screen">
+        <Helmet>
+          <title>Error - Success Blueprint</title>
+        </Helmet>
         <div className="hero-content flex-col lg:flex-row-reverse gap-10">
           <div>
             <h1 className="text-5xl font-bold">

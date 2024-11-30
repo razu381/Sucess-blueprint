@@ -1,13 +1,18 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet";
 
 function LogIn() {
   let { setUser, signIn, loginWithGoogle } = useContext(AuthContext);
   let [userEmail, setUserEmail] = useState();
-
+  let location = useLocation().state;
+  // if (location) {
+  //   location = location.replace("/", "");
+  // }
+  console.log(location);
   let navigate = useNavigate();
 
   function handleLogin(e) {
@@ -19,13 +24,22 @@ function LogIn() {
       .then((res) => {
         setUser(res.user);
         toast.success("New user logged in with email " + res.user.email);
-        navigate("/profile");
+
+        console.log("This is before navigate - ", location);
+        if (location) {
+          navigate(location);
+        } else {
+          navigate("/profile");
+        }
       })
       .catch((err) => toast.error(err.message));
   }
   return (
     <div>
-      <div className="hero svg-background min-h-screen">
+      <Helmet>
+        <title>Login - Success Blueprint</title>
+      </Helmet>
+      <div className="hero bg-success-dark svg-background min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card bg-white bg-opacity-5 w-full max-w-md shrink-0 shadow-2xl">
             <h2 className="text-center text-white text-2xl font-bold pt-5">
